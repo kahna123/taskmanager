@@ -38,7 +38,7 @@ io.on("connection", (socket) => {
     for (let userId in onlineUsers) {
       if (onlineUsers[userId] === socket.id) {
         delete onlineUsers[userId];
-        console.log("❌ User disconnected:", userId);
+        console.log("❌ Userr disconnected:", userId);
       }
     }
   });
